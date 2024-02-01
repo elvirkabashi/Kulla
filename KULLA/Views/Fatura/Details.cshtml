@@ -1,0 +1,63 @@
+﻿@model KULLA.Models.Fatura
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="d-flex justify-content-between">
+    <div class="d-flex">
+        <h4>Emri i bleresit:</h4>
+        <h4><b class="ms-2">@Html.DisplayFor(model => model.Blersi)</b></h4>
+    </div>
+    <div class="d-flex">
+        <h4>Destinacjoni:</h4>
+        <h4><b class="ms-2">@Html.DisplayFor(model => model.Destinacjoni)</b></h4>
+    </div>
+    <div>
+        <div class="d-flex">
+            <h6>Data:</h6>
+            <h6><b class="ms-2">@String.Format("{0:dd/MM/yyyy}", Model.DataKrijimit)</b></h6>
+        </div>
+        <div class="d-flex">
+            <h6 class="ms-4">Ora:</h6>
+            <h6><b class="ms-2">@String.Format("{0:HH:mm}", Model.DataKrijimit)</b></h6>
+        </div>
+    </div>
+
+</div>
+
+<div class="mt-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Kategoria</th>
+                <th>Produkti</th>
+                <th>Cmimi</th>
+                <th>Sasia</th>
+                <th>Shuma</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var shitja in ViewData["Shitjet"] as List<Shitja>)
+            {
+                <tr>
+                    <td>@shitja.Produkti.Category</td>
+                    <td>@shitja.Produkti.Emri</td>
+                    <td>@shitja.Produkti.Cmimi €</td>
+                    <td>@shitja.Sasia</td>
+                    <td>@(shitja.Produkti.Cmimi * shitja.Sasia)€</td>
+                </tr>
+            }
+            <tr>
+                <td colspan="4" style="border:none"></td>
+                <td style="background-color:#E4E4E4"><strong>Totali: @Html.DisplayFor(model => model.Totali)€</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.NrFatures">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

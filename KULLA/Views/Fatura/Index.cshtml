@@ -1,0 +1,47 @@
+﻿@model IEnumerable<KULLA.Models.Fatura>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nr Fatures
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blersi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Totali)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NrFatures)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Blersi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Totali)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.NrFatures">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.NrFatures">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.NrFatures">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<KULLA.Models.Shitja>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Produkti.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produkti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Produkti.Cmimi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sasia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blersi)
+            </th>
+            <th>
+                Totali
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produkti.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produkti.Emri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produkti.Cmimi)€
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sasia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Blersi)
+            </td>
+            <td>
+                    @(item.Produkti.Cmimi * item.Sasia)€
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
