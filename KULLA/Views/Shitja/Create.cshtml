@@ -7,8 +7,7 @@
 
 <h4>Krijo Shitje</h4>
 <hr />
-<div class="d-flex justify-content-between">
-    <div class="col-md-4">
+<div class="col-md-6 col-lg-3 mx-5">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -16,11 +15,12 @@
                 <select asp-for="ProduktiId" class="form-control" asp-items="@(ViewBag.ProduktetList ?? new SelectList(new List<SelectListItem>(), "Value", "Text"))">
                     <option value="">Select Product</option>
                 </select>
+                <span asp-validation-for="ProduktiId" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Sasia" class="control-label"></label>
-                <input asp-for="Sasia" class="form-control" />
+                <input type="number" asp-for="Sasia" class="form-control" min="1" value="1" />
                 <span asp-validation-for="Sasia" class="text-danger"></span>
             </div>
 
@@ -29,24 +29,9 @@
             </div>
         </form>
     </div>
-    <form asp-action="KrijoFaturen" method="post">
-        <div >
-            <div class="form-group">
-                <label asp-for="Blersi" class="control-label"></label>
-                <input asp-for="Blersi" class="form-control" />
-                <span asp-validation-for="Blersi" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Destinacjoni" class="control-label"></label>
-                <input asp-for="Destinacjoni" class="form-control" />
-            </div>
-        </div>
-        <input type="submit" value="Krijo faturen" class="btn btn-primary mt-2"></input>
-    </form>
-</div>
 
-<h4>Shitjet e Listuara:</h4>
-<table class="table">
+<h4 class="mt-5">Shitjet e Listuara:</h4>
+<table class="table table-striped w-100">
     <thead>
         <tr>
             <th>Nr.</th>
@@ -55,6 +40,7 @@
             <th>Cmimi</th>
             <th>Sasia</th>
             <th>Shuma</th>
+            <th>Fshij</th>
         </tr>
     </thead>
     <tbody>
@@ -72,9 +58,9 @@
                 <td>@shitja.Sasia</td>
                 <td>@(shitja.Produkti.Cmimi * shitja.Sasia)€</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@shitja.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@shitja.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@shitja.Id">Delete</a>
+                  @*   <a asp-action="Edit" asp-route-id="@shitja.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@shitja.Id">Details</a> | *@
+                    <a asp-action="Delete" asp-route-id="@shitja.Id"><i class="bi bi-trash3 text-danger"></i></a>
                 </td>
             </tr>
             totali += (shitja.Produkti.Cmimi * shitja.Sasia);
@@ -82,13 +68,29 @@
         }
         <tr>
             <td colspan="5" style="border:none"></td>
-            <td style="background-color:#E4E4E4"><strong>Totali: @totali €</strong></td>
+            <td style="background-color:#E4E4E4;text-align:end"><strong>Totali:</strong></td>
+            <td style="background-color:#E4E4E4"><strong>@totali €</strong></td>
         </tr>
     </tbody>
 </table>
 
+<div class="col-md-6 col-lg-3 mx-5">
+    <form asp-action="KrijoFaturen" method="post">
+        <div>
+            <div class="form-group">
+                <label asp-for="Blersi" class="control-label"></label>
+                <input asp-for="Blersi" class="form-control" required />
+                <span asp-validation-for="Blersi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Destinacjoni" class="control-label"></label>
+                <input asp-for="Destinacjoni" class="form-control" required />
+            </div>
+        </div>
+        <input type="submit" value="Krijo faturen" class="btn btn-primary mt-2"></input>
+    </form>
+</div>
 
-
-<div>
+<div class="mt-5">
     <a asp-action="Index">Back to List</a>
 </div>

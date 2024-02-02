@@ -9,107 +9,107 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KULLA
 build_property.RootNamespace = KULLA
-build_property.ProjectDir = C:\Users\elvir\Desktop\Kulla\KULLA\
+build_property.ProjectDir = C:\Users\elvir\source\repos\KULLA\KULLA\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\elvir\Desktop\Kulla\KULLA
+build_property.MSBuildProjectDirectory = C:\Users\elvir\source\repos\KULLA\KULLA
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Fatura/Create.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Fatura/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Fatura/Delete.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Fatura/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Fatura/Details.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Fatura/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Fatura/Edit.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Fatura/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Fatura/Index.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Fatura/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF0dXJhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Home/Index.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Home/Privacy.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Produkti/Create.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Produkti/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Produkti/Delete.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Produkti/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Produkti/Details.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Produkti/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGlcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Produkti/Edit.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Produkti/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Produkti/Index.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Produkti/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdGlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shared/Error.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shitja/Create.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shitja/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpdGphXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shitja/Delete.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shitja/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpdGphXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shitja/Details.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shitja/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpdGphXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shitja/Edit.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shitja/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpdGphXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shitja/Index.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shitja/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpdGphXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/_ViewImports.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/_ViewStart.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elvir/Desktop/Kulla/KULLA/Views/Shared/_Layout.cshtml]
+[C:/Users/elvir/source/repos/KULLA/KULLA/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-t74mlfb45h

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj": {}
+    "C:\\Users\\elvir\\Desktop\\Kulla\\KULLA\\KULLA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj": {
+    "C:\\Users\\elvir\\Desktop\\Kulla\\KULLA\\KULLA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj",
+        "projectUniqueName": "C:\\Users\\elvir\\Desktop\\Kulla\\KULLA\\KULLA.csproj",
         "projectName": "KULLA",
-        "projectPath": "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj",
+        "projectPath": "C:\\Users\\elvir\\Desktop\\Kulla\\KULLA\\KULLA.csproj",
         "packagesPath": "C:\\Users\\elvir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\obj\\",
+        "outputPath": "C:\\Users\\elvir\\Desktop\\Kulla\\KULLA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elvir\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -60,9 +60,10 @@ namespace KULLA.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProduktiId,Sasia,Blersi")] KrijoShitjeDto shitjaDto)
         {
+            var numriFatures = await MerrNumrinEFunditTeFaturesAsync();
             if (ModelState.IsValid)
             {
-                var numriFatures = await MerrNumrinEFunditTeFaturesAsync();
+                
 
                 var shitja = new Shitja
                 {
@@ -77,7 +78,7 @@ namespace KULLA.Controllers
                 return RedirectToAction(nameof(Create));
             }
             ViewData["ProduktetList"] = new SelectList(_context.Produktet, "ProduktiId", "Emri", shitjaDto.ProduktiId);
-            ViewData["Shitjet"] = _context.Shitjet.ToList();
+            ViewData["Shitjet"] = _context.Shitjet.Where(s => s.NrFatures == numriFatures + 1).ToList();
             return View(shitjaDto);
         }
 
@@ -97,7 +98,6 @@ namespace KULLA.Controllers
                 }
             }
 
-            // Krijo faturën e re
             var fatura = new Fatura
             {
                 Blersi = blersi,

@@ -23,7 +23,7 @@ namespace KULLA.Controllers
         public async Task<IActionResult> Index()
         {
               return _context.Faturat != null ? 
-                          View(await _context.Faturat.ToListAsync()) :
+                          View(await _context.Faturat.OrderByDescending(x => x.NrFatures).ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Faturat'  is null.");
         }
 
