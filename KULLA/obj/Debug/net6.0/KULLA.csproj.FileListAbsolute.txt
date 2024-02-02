@@ -285,3 +285,5 @@ C:\Users\elvir\source\repos\KULLA\KULLA\bin\Debug\net6.0\runtimes\win\lib\net6.0
 C:\Users\elvir\source\repos\KULLA\KULLA\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\elvir\source\repos\KULLA\KULLA\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\elvir\source\repos\KULLA\KULLA\obj\Debug\net6.0\KULLA.sourcelink.json
+C:\Users\elvir\source\repos\Kulla\KULLA\obj\Debug\net6.0\KULLA.Properties.Resources.resources
+C:\Users\elvir\source\repos\Kulla\KULLA\obj\Debug\net6.0\KULLA.csproj.GenerateResource.cache

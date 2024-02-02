@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Hps104NC4GSuDw1LIujE0IBfUoH/3fgGY6mtAIiUyExh6eJ9OtZTlHBEPgKWU29JZ5dshufmOisw50KPuKaOA==",
+  "dgSpecHash": "AAGhao/RyZgcn07gR2Me9hlzTo0Xjx4z5NvKLmRN8gGRSw5cFhGsYqF/xqQ+guR9QniaNUgZExvr7Ilmz8QF9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elvir\\Desktop\\Kulla\\KULLA\\KULLA.csproj",
+  "projectFilePath": "C:\\Users\\elvir\\source\\repos\\Kulla\\KULLA\\KULLA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elvir\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\elvir\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
