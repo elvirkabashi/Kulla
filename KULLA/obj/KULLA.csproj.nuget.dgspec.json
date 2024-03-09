@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elvir\\source\\repos\\Kulla\\KULLA\\KULLA.csproj": {}
+    "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elvir\\source\\repos\\Kulla\\KULLA\\KULLA.csproj": {
+    "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elvir\\source\\repos\\Kulla\\KULLA\\KULLA.csproj",
+        "projectUniqueName": "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj",
         "projectName": "KULLA",
-        "projectPath": "C:\\Users\\elvir\\source\\repos\\Kulla\\KULLA\\KULLA.csproj",
+        "projectPath": "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\KULLA.csproj",
         "packagesPath": "C:\\Users\\elvir\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\elvir\\source\\repos\\KULLA\\KULLA\\obj\\",
         "projectStyle": "PackageReference",
@@ -46,11 +46,11 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.24, )"
+              "version": "[6.0.26, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.24, )"
+              "version": "[6.0.26, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

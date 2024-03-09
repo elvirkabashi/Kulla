@@ -1,4 +1,4 @@
-﻿@model KULLA.Models.Fatura
+﻿ @model KULLA.Models.Fatura
 
 @{
     ViewData["Title"] = "Details";
@@ -13,6 +13,10 @@
     <div class="d-flex">
         <h4>Destinacjoni:</h4>
         <h4><b class="ms-2">@Html.DisplayFor(model => model.Destinacjoni)</b></h4>
+    </div>
+    <div class="d-flex">
+        <h4>Shitesi:</h4>
+        <h4><b class="ms-2">@ViewData["ShitesiName"]</b></h4>
     </div>
     <div>
         <div class="d-flex">

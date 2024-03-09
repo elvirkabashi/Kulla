@@ -8,16 +8,21 @@ using Microsoft.EntityFrameworkCore;
 using KULLA.Data;
 using KULLA.Models;
 using KULLA.Models.dto;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace KULLA.Controllers
 {
+    [Authorize]
     public class ShitjaController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public ShitjaController(ApplicationDbContext context)
+        public ShitjaController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Shitja
@@ -97,12 +102,15 @@ namespace KULLA.Controllers
                     totali += shitja.Produkti.Cmimi * shitja.Sasia;
                 }
             }
+            var user = await _userManager.GetUserAsync(User);
 
             var fatura = new Fatura
             {
                 Blersi = blersi,
                 Destinacjoni = destinacjoni,
-                Totali = totali
+                Totali = totali,
+                Shitesi = user.Id,
+                User = user
             };
 
 

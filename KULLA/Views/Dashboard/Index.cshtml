@@ -1,0 +1,132 @@
+﻿@model KULLA.Models.dto.Dashboard
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+<div class="container">
+    <div class="d-flex gap-4">
+        <div class="w-25 bg-card p-3 rounded-3" style="border:1px solid black">
+            <p class="d-inline">Totali pas barazimit te fundit</p>
+            <div class="d-flex justify-content-between">
+                <h2 class="py-1">@Model.ShitjaTotale€</h2>
+            </div>
+        </div>
+        <div class="w-25 bg-card p-3 rounded-3" style="border:1px solid black">
+            <p class="d-inline">Totali Besnikut</p>
+            <div class="d-flex justify-content-between">
+                <h2 class="py-1">@Model.ShitjaBesnikit€</h2>
+                @if ((Model.ShitjaTotale / 2) < Model.ShitjaBesnikit)
+                {
+                    <p class="text-danger">@((Model.ShitjaTotale / 2) - Model.ShitjaBesnikit)<i class="bi bi-arrow-down"></i></p>
+                }
+                else
+                {
+                    <p class="text-success">+@((Model.ShitjaTotale / 2) - Model.ShitjaBesnikit)<i class="bi bi-arrow-up"></i></p>
+                }
+            </div>
+        </div>
+        <div class="w-25 bg-card p-3 rounded-3" style="border:1px solid black">
+            <p class="d-inline">Totali Shkelzenit</p>
+            <div class="d-flex justify-content-between">
+                <h2 class="py-1">@Model.ShitjaShkelezenit€</h2>
+                @if ((Model.ShitjaTotale / 2) < Model.ShitjaShkelezenit)
+                {
+                    <p class="text-danger">@((Model.ShitjaTotale / 2) - Model.ShitjaShkelezenit)<i class="bi bi-arrow-down"></i></p>
+                }
+                else
+                {
+                    <p class="text-success">+@((Model.ShitjaTotale / 2) - Model.ShitjaShkelezenit)<i class="bi bi-arrow-up"></i></p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-center my-5">Detajet</h1>
+
+        <div class="d-flex justify-content-center gap-5">
+            <div style="border:1px solid black" class="w-50">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Fatura
+                            </th>
+                            <th>
+                                Shitesi
+                            </th>
+                            <th>
+                                Totali
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var fatura in Model.Faturat)
+                        {
+                            string shitesi = @ViewData[$"ShitesiName{fatura.NrFatures}"].ToString();
+
+                            if (shitesi == "Selim" || shitesi == "Pajtim")
+                            {
+                                <tr>
+                                    <td>
+                                        @fatura.NrFatures
+                                    </td>
+                                    <td>
+                                        @shitesi
+                                    </td>
+                                    <td>
+                                        @fatura.Totali€
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="border:1px solid black" class="w-50">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Fatura
+                            </th>
+                            <th>
+                                Shitesi
+                            </th>
+                            <th>
+                                Totali
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var fatura in Model.Faturat)
+                        {
+                            string shitesi = @ViewData[$"ShitesiName{fatura.NrFatures}"].ToString();
+
+                            if (shitesi == "Majlind")
+                            {
+                                <tr>
+                                    <td>
+                                        @fatura.NrFatures
+                                    </td>
+                                    <td>
+                                        @shitesi
+                                    </td>
+                                    <td>
+                                        @fatura.Totali€
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

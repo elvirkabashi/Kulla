@@ -10,5 +10,7 @@ namespace KULLA.Models
         public string Destinacjoni { get; set; }
         public double Totali { get; set; }
         public DateTime DataKrijimit { get; set; } = DateTime.Now;
+        public string Shitesi { get; set; }
+        public ApplicationUser User { get; set; }
     }
 }

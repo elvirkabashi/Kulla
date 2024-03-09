@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KULLA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fad81c3b9ae03c34eeb4c38972747a5a09799f3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("KULLA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KULLA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

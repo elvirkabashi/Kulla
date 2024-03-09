@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using KULLA.Data;
 using KULLA.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace KULLA.Controllers
 {
+    [Authorize]
     public class FaturaController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -22,9 +24,16 @@ namespace KULLA.Controllers
         // GET: Fatura
         public async Task<IActionResult> Index()
         {
-              return _context.Faturat != null ? 
-                          View(await _context.Faturat.OrderByDescending(x => x.NrFatures).ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Faturat'  is null.");
+            var faturat = await _context.Faturat.OrderByDescending(x => x.NrFatures).ToListAsync();
+
+            foreach (var fatura in faturat)
+            {
+                var shitesiId = fatura.Shitesi;
+                var shitesi = await _context.Users.FirstOrDefaultAsync(u => u.Id == shitesiId);
+                ViewData[$"ShitesiName{fatura.NrFatures}"] = shitesi?.FullName;
+            }
+
+            return View(faturat);
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -45,6 +54,10 @@ namespace KULLA.Controllers
 
             // Paraqit shitjet në shabllon
             ViewData["Shitjet"] = shitjet;
+
+            var shitesiId = fatura.Shitesi;
+            var shitesi = await _context.Users.FirstOrDefaultAsync(u => u.Id == shitesiId);
+            ViewData["ShitesiName"] = shitesi?.FullName;
 
             return View(fatura);
         }

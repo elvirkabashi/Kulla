@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using KULLA.Data;
 using KULLA.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace KULLA.Controllers
 {
+    [Authorize]
     public class ProduktiController : Controller
     {
         private readonly ApplicationDbContext _context;
